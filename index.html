@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>MATRIX HOME</title>
+ <link rel="stylesheet" href="bootstrap.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="navbar">
+  <h4>Matrix Home</h4>
+  <ul>
+   <a href="#determinant2">2 by 2 Matrix</a>
+   <a href="#determinant">3 by 3 Matrix</a>
+  </ul>
+ </div>
+ <div class="contianer-fluid" id="content">
+  <div class="row">
+   <div class="col-md-6 col-sm-12 col-xm-12">
+    <div id="determinant">
+     <h5 style="text-align: center;">Determinant of 3 by 3 Matrix</h5>
+     <input type="number" placeholder="a11" class="input" id="a11">
+     <input type="number" placeholder="a12" class="input" id="a12">
+     <input type="number" placeholder="a13" class="input" id="a13"><br><br>
+     <input type="number" placeholder="a21" class="input" id="a21">
+     <input type="number" placeholder="a22" class="input" id="a22">
+     <input type="number" placeholder="a23" class="input" id="a23"><br><br>
+     <input type="number" placeholder="a31" class="input" id="a31">
+     <input type="number" placeholder="a32" class="input" id="a32">
+     <input type="number" placeholder="a33" class="input" id="a33"><br><br>
+     <span id="ans" class="ans"></span><br><br>
+     <input type="button" value="Submit" id="submitBtn" class="submit">
+     <button id="clearBtn" class="clear">Clear</button>
+    </div>
+   </div>
+
+
+
+
+   <!--trial-->
+   <div class="col-md-6 col-sm-12 col-xm-12">
+    <div id="determinant2">
+     <h5 style="text-align: center;">Determinant of 2 by 2 Matrix</h5>
+     <input type="number" placeholder="a11" class="input" id="ba11">
+     <input type="number" placeholder="a12" class="input" id="ba12"><br><br>
+
+     <input type="number" placeholder="a21" class="input" id="ba21">
+     <input type="number" placeholder="a22" class="input" id="ba22"><br><br>
+
+     <span id="ans2" class="ans"></span><br><br>
+     <input type="button" value="Submit" class="submit" id="submitBtn2">
+     <button id="clearBtn2" class="clear">Clear</button>
+    </div>
+   </div>
+  </div>
+ </div>
+ 
+ <div class="footer">
+  <p>
+   &copy;2020, All Rights Reserved <br>
+   Powered by <a href="https://frankofficial.netlify.com" target="_blank">Chitech-Group</a> 
+  </p>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
