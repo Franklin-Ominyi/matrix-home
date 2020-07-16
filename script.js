@@ -1,3 +1,18 @@
+//toggler
+var togglerbar = document.getElementById("togglerbar");
+var togglemenu = document.getElementById("togglemenu");
+togglemenu.style.display = "none";
+const toggle =()=>{
+ if(togglemenu.style.display == "none"){
+  togglemenu.style.display = "block";
+  togglerbar.style.color = "red";
+ }else{
+  togglemenu.style.display = "none";
+  togglerbar.style.color = "purple";
+ }
+}
+document.getElementById("togglerbar").addEventListener("click", toggle);
+
 //function for finding the determinant of 3 by 3 matrix
 const myFunc=()=>{
  let a11 = document.querySelector('#a11').value;
@@ -61,7 +76,35 @@ const clearInputField2=()=>{
  document.getElementById("ans2").innerHTML = '';
 }
 
+//almighty formula
+const myFunctionQuad=()=>{
+ let a = document.querySelector('#a').value;
+ let b = document.querySelector('#b').value;
+ let c = document.querySelector('#c').value;
 
+ let bSquare = b * b;
+ let otherPart = 4*a*c;
+ let top = bSquare - otherPart;
+ let topSquared = Math.sqrt(top)
+ let ansOne = -b + topSquared;
+ let ansTwo = (-b) - topSquared;
+ let fullAnsOne = ansOne/ (2*a);
+ let fullAnsTwo = ansTwo/ (2*a);
+
+ let answer = fullAnsOne + ' or  ' + fullAnsTwo;
+
+ document.getElementById("ans3").innerHTML = "ANSWER: " + answer;
+}
+
+const clearInputField3=()=>{
+ document.querySelector('#a').value = "";
+ document.querySelector('#b').value = "";
+ document.querySelector('#c').value = "";
+ document.getElementById("ans3").innerHTML = '';
+}
+
+document.querySelector('#clearBtn3').addEventListener('click', clearInputField3)
+document.querySelector('#submitBtn3').addEventListener('click', myFunctionQuad)
 document.querySelector('#clearBtn2').addEventListener('click', clearInputField2)
 document.querySelector('#submitBtn2').addEventListener('click', myFuncTwoByTwo)
 document.querySelector('#clearBtn').addEventListener('click', clearInputField)

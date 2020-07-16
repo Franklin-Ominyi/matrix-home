@@ -10,19 +10,42 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #23be9d;
+}
+
+#content {
+  position: relative;
+  top: 100px;
+}
+
+.col-md-4 div {
+  border: 3px solid orange;
+  -webkit-box-shadow: 6px 2px 3px 4px white;
+          box-shadow: 6px 2px 3px 4px white;
+  border-radius: 10%;
+  margin-bottom: 20px;
+  background-color: #a6ff01;
+  padding: 10px;
+}
+
+.col-md-4 div h5 {
+  color: rgba(32, 136, 255, 0.972);
+  text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .input {
-  margin: 2px 2px;
+  margin: 2px;
   font-size: 14px;
-  width: 80px;
+  width: 65px;
+  border: 2px solid plum;
+  border-radius: 2px 6px 2px 6px;
 }
 
 #navbar {
   position: fixed;
   width: 100%;
-  background: gray;
+  background: white;
   z-index: 3;
 }
 
@@ -31,6 +54,7 @@ body {
   margin-left: 10px;
   font-family: fantasy;
   color: blue;
+  padding-top: 5px;
 }
 
 #navbar ul {
@@ -42,7 +66,7 @@ body {
 
 #navbar ul a {
   text-decoration: none;
-  color: yellow;
+  color: palevioletred;
   font-family: cursive;
   padding: 0 4px;
   -webkit-transition: all 0.7s ease-in;
@@ -53,22 +77,9 @@ body {
   color: pink;
 }
 
-#content {
-  position: absolute;
-  top: 80px;
-  margin: 0 20px;
-}
-
-#determinant, #determinant2 {
-  border: 3px solid #64aef8;
-  background-color: blanchedalmond;
-  padding: 20px;
-  margin-bottom: 17px;
-}
-
 .ans {
   font-weight: bolder;
-  color: green;
+  color: #0905ff;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -104,7 +115,52 @@ body {
   padding: 0;
 }
 
-.col-md-6:last-child {
+.col-md-4:last-child {
   margin-bottom: 90px;
+}
+
+#togglerbar {
+  font-size: 25px;
+  font-weight: bolder;
+  float: right;
+  padding-top: 3px;
+  color: purple;
+  cursor: pointer;
+  margin-right: 7px;
+}
+
+#togglemenu {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 33px;
+  background: green;
+  border-bottom: 8px solid white;
+  padding: 2px;
+}
+
+#togglemenu a {
+  color: blanchedalmond;
+  font-size: 10px;
+  text-decoration: none;
+  padding: 5.3px;
+  font-weight: bolder;
+  font-family: NSimSun;
+  margin-right: 12px;
+}
+
+#togglemenu a:hover {
+  background: white;
+  color: #58d61d;
+}
+
+#togglemenu .active {
+  background: black;
+  color: blanchedalmond;
+}
+
+#togglemenu .active:hover {
+  background: white;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
