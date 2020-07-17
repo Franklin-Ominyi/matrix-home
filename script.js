@@ -103,6 +103,47 @@ const clearInputField3=()=>{
  document.getElementById("ans3").innerHTML = '';
 }
 
+//Simultaneous Equation
+const myFunctionSimu=()=>{
+ let Ax = document.querySelector('#simuAx').value;
+ let Ay = document.querySelector('#simuAy').value;
+ let Ac = document.querySelector('#simuAc').value;
+
+ let Bx = document.querySelector('#simuBx').value;
+ let By = document.querySelector('#simuBy').value;
+ let Bc = document.querySelector('#simuBc').value;
+
+ let firstX = Ax * By;
+ let secondX = (-Bx)*(Ay);
+ let mainNo = Ac * By;
+ let number = Bc * Ay;
+ let top = mainNo - number;
+ let down = firstX + secondX;
+ let x = top/down;
+
+ //www
+ let yTop = Ac;
+ let ySubtract = Ax;
+ let yEquation = (yTop - (ySubtract));
+ let y = yEquation/Ay;
+ document.getElementById('ansSimu').innerHTML = "x: " + x + " y: " + y ;
+}
+
+const clearInputFieldSimu=()=>{
+ document.querySelector('#simuAx').value = "";
+ document.querySelector('#simuAy').value = "";
+ document.querySelector('#simuAc').value = "";
+
+ document.querySelector('#simuBx').value = "";
+ document.querySelector('#simuBy').value = "";
+ document.querySelector('#simuBc').value = "";
+ 
+ document.getElementById("ansSimu").innerHTML = '';
+}
+
+
+document.querySelector('#clearBtnSimu').addEventListener('click', clearInputFieldSimu)
+document.querySelector('#submitBtnSimu').addEventListener('click', myFunctionSimu)
 document.querySelector('#clearBtn3').addEventListener('click', clearInputField3)
 document.querySelector('#submitBtn3').addEventListener('click', myFunctionQuad)
 document.querySelector('#clearBtn2').addEventListener('click', clearInputField2)
