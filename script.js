@@ -123,7 +123,7 @@ const myFunctionSimu=()=>{
 
  //www
  let yTop = Ac;
- let ySubtract = Ax;
+ let ySubtract = Ax * x;
  let yEquation = (yTop - (ySubtract));
  let y = yEquation/Ay;
  document.getElementById('ansSimu').innerHTML = "x: " + x + " y: " + y ;
