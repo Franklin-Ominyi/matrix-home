@@ -17,17 +17,18 @@
   <div id="toggler">
    <span id="togglerbar">&#9776</span>
   </div>
+  <div class="container-fluid" id="togglemenu">
+   <a href="#" class="active">Home</a>
+   <a href="#">3 by 3 Matrix</a>
+   <a href="#determinant2">2 by 2 Matrix</a>
+   <a href="#quadratic">Quadratic Equation</a>
+   <a href="#simultaneous">Simultaneous Equation</a>
+   <!-- <a href="#">About</a> -->
+  </div>
+ 
  </div>
 
- <div class="container-fluid" id="togglemenu">
-  <a href="#" class="active">Home</a>
-  <a href="#">3 by 3 Matrix</a>
-  <a href="#determinant2">2 by 2 Matrix</a>
-  <a href="#quadratic">Quadratic Equation</a>
-  <a href="#simultaneous">Simultaneous Equation</a>
-  <!-- <a href="#">About</a> -->
- </div>
-
+ 
  <div id="content">
   <div class="container">
    <div class="row">
@@ -63,6 +64,48 @@
       <button id="clearBtn2" class="clear">Clear</button>
      </div>
     </div>
+
+    <div id="matrixEquation" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Using Matrix Method To Solve</h5>
+      <p style="text-align: center; color: rgb(245, 0, 0);">3 by 3 Matrix Equation</p><br>
+      <input type="number" placeholder="ax" class="input" id="a11E">
+      <input type="number" placeholder="ay" class="input" id="a12E">
+      <input type="number" placeholder="az" class="input" id="a13E"> =
+      <input type="number" placeholder="ak" class="input" id="ak"><br><br>
+
+      <input type="number" placeholder="bx" class="input" id="a21E">
+      <input type="number" placeholder="by" class="input" id="a22E">
+      <input type="number" placeholder="bz" class="input" id="a23E"> =
+      <input type="number" placeholder="bk" class="input" id="bk"><br><br>
+
+      <input type="number" placeholder="cx" class="input" id="a31E">
+      <input type="number" placeholder="cy" class="input" id="a32E">
+      <input type="number" placeholder="cz" class="input" id="a33E"> =
+      <input type="number" placeholder="ck" class="input" id="ck"><br><br>
+      <span id="ansE" class="ans"></span><br><br>
+      <input type="button" value="Submit" id="submitBtnE" class="submit">
+      <button id="clearBtnE" class="clear">Clear</button>
+     </div>
+    </div>
+
+    <div id="matrixEquation" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Using Matrix Method To Solve</h5>
+      <p style="text-align: center; color: rgb(245, 0, 0);">2 by 2 Matrix Equation</p><br>
+      <input type="number" placeholder="ax" class="input" id="a11E2">
+      <input type="number" placeholder="ay" class="input" id="a12E2"> =
+      <input type="number" placeholder="ak" class="input" id="ak2"><br><br>
+
+      <input type="number" placeholder="bx" class="input" id="a21E2">
+      <input type="number" placeholder="by" class="input" id="a22E2"> =
+      <input type="number" placeholder="bk" class="input" id="bk2"><br><br>
+
+      <span id="ansE2" class="ans"></span><br><br>
+      <input type="button" value="Submit" id="submitBtnE2" class="submit">
+      <button id="clearBtnE2" class="clear">Clear</button>
+     </div>
+    </div>
  
     <div class="col-md-4" id="quadratic">
      <div>
@@ -77,14 +120,43 @@
      </div>
     </div>
 
+    <div class="col-md-4" id="">
+     <div>
+      <h5 style="text-align: center">Finding the Product and Sum of roots</h5>
+      <input type="number" placeholder="a" class="input" id="aR">
+      <input type="number" placeholder="b" class="input" id="bR">
+      <input type="number" placeholder="c" class="input" id="cR"><br><br>
+  
+      <span id="ans3R" class="ans"></span><br><br>
+      <input type="button" value="Submit" class="submit" id="submitBtn3R">
+      <button id="clearBtn3R" class="clear">Clear</button>
+     </div>
+    </div>
+
+     <!--Quadratic Root Formulation-->
+     <!--RF stands for root formulation-->
+    <div class="col-md-4" id="">
+     <div>
+      <h5 style="text-align: center">Formulation of Quadratic <br>
+       Equation from Roots</h5>
+      <input type="number" placeholder="a" class="input" id="aRF">
+      <input type="number" placeholder="b" class="input" id="bRF"><br><br>
+  
+      <span id="ans3RF" class="ans">x<sup>2</sup><span id="ans3RF2"></span></span><br><br>
+      <input type="button" value="Submit" class="submit" id="submitBtn3RF">
+      <button id="clearBtn3RF" class="clear">Clear</button>
+     </div>
+    </div>
+
+
     <div id="simultaneous" class="col-md-4">
     <div>
      <h5 style="text-align: center;">Simultaneous Equation</h5>
      <input type="number" placeholder="Ax" class="input" id="simuAx">
-     <input type="number" placeholder="Ay" class="input" id="simuAy">
+     <input type="number" placeholder="Ay" class="input" id="simuAy"> =  
      <input type="number" placeholder="Ac" class="input" id="simuAc"><br><br>
      <input type="number" placeholder="Bx" class="input" id="simuBx">
-     <input type="number" placeholder="By" class="input" id="simuBy">
+     <input type="number" placeholder="By" class="input" id="simuBy"> =
      <input type="number" placeholder="Bc" class="input" id="simuBc"><br><br>
      <span id="ansSimu" class="ans"></span><br><br>
      <input type="button" value="Submit" id="submitBtnSimu" class="submit">

@@ -141,7 +141,8 @@ body{
   color: blanchedalmond;
   font-size: 10px;
   text-decoration: none;
-  padding: 5.3px;
+  padding: 5.6px 0;
+  // margin: 4px 0;
   font-weight: bolder;
   font-family: NSimSun;
   margin-right: 12px;
@@ -163,5 +164,21 @@ body{
    background:white;
    color: black;
   }
+ }
+}
+
+
+#ans3RF{
+ display: none;
+}
+
+
+@media screen and (max-width: 350px){
+ #togglemenu{
+  display: none;
+ };
+
+ #togglerbar{
+  display: none;
  }
 }
