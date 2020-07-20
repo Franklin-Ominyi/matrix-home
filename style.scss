@@ -184,13 +184,9 @@ body{
 }
 
 i{
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
  margin: 10px 10px;
  color: blue;
- // text-align: center;
+ font-size: 5px;
  &:hover{
  color: green;
  }
