@@ -144,7 +144,7 @@ function myFunctionRootFormulation(e){
  var a = document.querySelector('#aRF').value;
  var b = document.querySelector('#bRF').value;
 
- var  sum= parseFloat((a)) + parseFloat((b)) ;
+ var  sum= (parseFloat(a) + parseFloat(b)) * -1;
  var product = (a * b);
 
  var prefix;
