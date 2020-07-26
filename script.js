@@ -162,7 +162,7 @@ function myFunctionRootFormulation(e){
   suffix = ''
  }
  
- var answer= `${prefix} ${sum} ${suffix} ${product} = 0`
+ var answer= `${prefix} ${sum}x ${suffix} ${product} = 0`
 
  document.getElementById('ans3RF').style.display = 'block';
  document.getElementById('ans3RF2').innerHTML = answer;
@@ -319,6 +319,149 @@ function clearInputFieldMatrixEquation2(e){
  document.getElementById("ansE2").innerHTML = '';
 
 }
+
+
+//Trial
+function myFunctionSS(e){
+ e.preventDefault();
+ var Ca = document.querySelector('#TCa').value;
+ var Cb = document.querySelector('#TCb').value;
+ var na = document.querySelector('#TNa').value;
+ var nb = document.querySelector('#TNb').value;
+
+ var a_done;
+ var b_done;
+ var divider;
+ var answer;
+
+ a_done = (na - 1);
+ b_done = (nb - 1)
+ divider = a_done - b_done;
+ c = (Ca) - (Cb);
+ commonD = c/divider;
+ answer =  `d: ${commonD}`
+ 
+ document.getElementById("ansSS").innerHTML = "ANSWER: " + answer;
+}
+
+function clearInputFieldSS(e){
+ e.preventDefault();
+ document.querySelector('#TCa').value = "";
+ document.querySelector('#TCb').value = "";
+ document.querySelector('#TNa').value = "";
+
+ document.querySelector('#TNb').value = "";
+ document.querySelector('#ansSS').innerHTML = '';
+}
+
+function myFunctionSS2(e){
+ e.preventDefault();
+ var a = document.querySelector('#Sa').value;
+ var n = document.querySelector('#Sn').value;
+ var r = document.querySelector('#Sr').value;
+
+ var r_done = Math.pow(r,n-1);
+ var done = a * r_done;
+var answer =`Tn: ${done}`
+
+ document.getElementById("ansSS2").innerHTML = "ANSWER: " + answer;
+}
+
+function clearInputFieldSS2(e){
+ e.preventDefault();
+ document.querySelector('#Sa').value = "";
+ document.querySelector('#Sn').value = "";
+ document.querySelector('#Sr').value = "";
+
+ document.querySelector('#ansSS2').innerHTML = '';
+}
+
+function myFunctionSS3(e){
+ e.preventDefault();
+ var a = document.querySelector('#Ta').value;
+ var n = document.querySelector('#Tn').value;
+ var d = document.querySelector('#Td').value;
+
+ var n_done = n -1;
+ var done = d * n_done;
+ var answer = parseFloat(a) + parseFloat(done);
+
+ document.getElementById("ansSS3").innerHTML = "ANSWER: Tn: " + answer;
+}
+
+function clearInputFieldSS3(e){
+ e.preventDefault();
+ document.querySelector('#Ta').value = "";
+ document.querySelector('#Tn').value = "";
+ document.querySelector('#Td').value = "";
+
+ document.querySelector('#ansSS3').innerHTML = '';
+}
+
+
+
+function myFunctionSS4(e){
+ e.preventDefault();
+ var n = document.querySelector('#aN').value;
+ var d = document.querySelector('#aD').value;
+ var t = document.querySelector('#aTn').value;
+
+ var n_done = n -1;
+ var done = d * n_done;
+ var answer = t -(done);
+
+ document.getElementById("ansSS4").innerHTML = "ANSWER: a: " + answer;
+}
+
+function clearInputFieldSS4(e){
+ e.preventDefault();
+ document.querySelector('#aN').value = "";
+ document.querySelector('#aTn').value = "";
+ document.querySelector('#aD').value = "";
+
+ document.querySelector('#ansSS4').innerHTML = '';
+}
+
+function myFunctionSS5(e){
+ e.preventDefault();
+ var a = document.querySelector('#snA').value;
+ var n = document.querySelector('#snN').value;
+ var d = document.querySelector('#snD').value;
+
+ var n_done = n -1;
+ var done = d * n_done;
+ var a_done = 2*a;
+ var n_done = n/2;
+ var inside = parseFloat(a_done) + parseFloat(done);
+ var answer = n_done * inside;
+
+ document.getElementById("ansSS5").innerHTML = "ANSWER: Sn: " + answer;
+}
+
+function clearInputFieldSS5(e){
+ e.preventDefault();
+ document.querySelector('#snA').value = "";
+ document.querySelector('#snD').value = "";
+ document.querySelector('#snN').value = "";
+
+ document.querySelector('#ansSS5').innerHTML = '';
+}
+
+document.querySelector('#clearBtnSS5').addEventListener('click', clearInputFieldSS5)
+document.querySelector('#submitBtnSS5').addEventListener('click', myFunctionSS5)
+
+document.querySelector('#clearBtnSS4').addEventListener('click', clearInputFieldSS4)
+document.querySelector('#submitBtnSS4').addEventListener('click', myFunctionSS4)
+
+document.querySelector('#clearBtnSS3').addEventListener('click', clearInputFieldSS3)
+document.querySelector('#submitBtnSS3').addEventListener('click', myFunctionSS3)
+
+document.querySelector('#clearBtnSS2').addEventListener('click', clearInputFieldSS2)
+document.querySelector('#submitBtnSS2').addEventListener('click', myFunctionSS2)
+
+
+document.querySelector('#clearBtnSS').addEventListener('click', clearInputFieldSS)
+document.querySelector('#submitBtnSS').addEventListener('click', myFunctionSS)
 
 document.querySelector('#clearBtn3RF').addEventListener('click', clearInputFieldRootFormulation)
 document.querySelector('#submitBtn3RF').addEventListener('click', myFunctionRootFormulation)
