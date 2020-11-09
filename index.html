@@ -6,9 +6,11 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <meta description="This site helps you to get the answers of all the questions inputed in within 0.01 seconds">
  <title>MATRIX HOME</title>
+ <link rel="apple-touch-icon" href="img/solve your maths with.png">
+ <link rel="shortcut icon" href="img/solve your maths with.png" type="image/x-icon">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -21,10 +23,9 @@
   <div class="container-fluid" id="togglemenu">
    <a href="#" class="active">Home</a>
    <a href="#">3 by 3 Matrix</a>
-   <a href="#determinant2">2 by 2 Matrix</a>
+   <a href="#std">Standard Deviation</a>
    <a href="#quadratic">Quadratic Equation</a>
    <a href="#simultaneous">Simultaneous Equation</a>
-   <!-- <a href="#">About</a> -->
   </div>
  
  </div>
@@ -32,6 +33,20 @@
  
  <div id="content">
   <div class="container">
+   <div class="row">
+    <div class="col-md-4">
+     <img id="img" src="img/solve your maths with.png" alt="logo">
+    </div>
+
+    <div class="col-md-4">
+     <img id="img" src="img/instructions.png" alt="logo">
+    </div>
+
+    <div class="col-md-4">
+     <img id="img" src="img/instructions 2.png" alt="logo">
+    </div>
+
+   </div>
    <div class="row">
     <div id="determinant" class="col-md-4">
      <div>
@@ -223,7 +238,7 @@
      </div>
     </div>
 
-
+    <!--Geometric Progression-->
     <div id="" class="col-md-4">
      <div>
       <h5 style="text-align: center;">Geometric Progression</h5>
@@ -237,6 +252,21 @@
       <button id="clearBtnSS2" class="clear">Clear</button>
      </div>
     </div>
+
+    <!--Standard deviation, mean and variance-->
+    <div id="std" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Standard Deviation, Mean and Variance</h5>
+      <span>Separated each value by a comma (,)</span><br>
+      <input type="text" placeholder="Values" class="input" id="stdValues">
+      <input type="text" placeholder="Frequencies" class="input" id="stdFrequencies"><br><br>
+      
+      <span id="ansStd" class="ans"></span><br><br>
+      <input type="button" value="Submit" id="submitBtnStd" class="submit">
+      <button id="clearBtnStd" class="clear">Clear</button>
+     </div>
+    </div>
+
 
     <div class="col-md-12" style="margin-bottom: 70px; font-size: 30px">
      <h3 style="text-align: center; color: blue;">Share</h3>
@@ -256,11 +286,11 @@
  
  <div class="footer">
   <p>
-   Powered by <a href="https://frankofficial.netlify.com" target="_blank">Chitech-Group</a> <br>
+   <span style="color: rgb(255, 10, 43)">Proudly</span> Powered by <a href="https://frankofficial.netlify.com" target="_blank">Chitech-Group</a> <br>
    &copy;2020 All Rights Reserved
   </p>
 
  </div>
- <script src="script.js"></script>
+ <script src="js/script.js"></script>
 </body>
 </html>

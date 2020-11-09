@@ -447,6 +447,63 @@ function clearInputFieldSS5(e){
  document.querySelector('#ansSS5').innerHTML = '';
 }
 
+//Standard deviation
+const myFunctionStd=(e)=>{
+ e.preventDefault();
+ // DOM manipulation
+ var value = document.querySelector('#stdValues').value;
+ var frequency = document.querySelector('#stdFrequencies').value;
+ submitBtn = document.querySelector('#submit');
+
+ //Spliting of the input based on comma
+ var valueArr = value.split(',');
+ var frequencyArr = frequency.split(',');
+
+ // Initialization of some variables to be used in the for loop
+ var count;
+ var xTotal = 0;
+ var fTotal= 0;
+ var top = 0;
+ var mean;
+ var variance;
+ var int;
+
+ // For loops
+ for(count = 0; count < valueArr.length; count++){
+  xTotal += (parseFloat((valueArr[count]))) * (parseFloat((frequencyArr[count])));
+  fTotal += (parseFloat((frequencyArr[count])));
+  mean = (xTotal/fTotal).toFixed(4);
+ }
+
+ for (int = 0; int < valueArr.length; int++){
+  var semiTop = ((parseFloat((valueArr[int]))) - mean);
+  top += Math.pow(semiTop, 2) ;
+  variance = ((top/fTotal).toFixed(4));
+ }
+ 
+ //fixing the decimal length to be 4
+ var std = (Math.sqrt(variance)).toFixed(4);
+
+ //Outputing the answers
+ document.querySelector('#ansStd').innerHTML = "The mean is " + mean + " and the standard deviation is "  + std + " while the variance is " + variance;
+}
+
+
+//Clear standard deviation
+function clearInputFieldStd(e){
+ e.preventDefault();
+ document.querySelector('#stdValues').value = "";
+ document.querySelector('#stdFrequencies').value = "";
+
+ document.querySelector('#ansStd').innerHTML = '';
+}
+
+
+//For standard deviation
+document.querySelector('#clearBtnStd').addEventListener('click', clearInputFieldStd)
+document.querySelector('#submitBtnStd').addEventListener('click', myFunctionStd)
+
+
 document.querySelector('#clearBtnSS5').addEventListener('click', clearInputFieldSS5)
 document.querySelector('#submitBtnSS5').addEventListener('click', myFunctionSS5)
 

@@ -13,6 +13,12 @@ body {
   background-color: #23be9d;
 }
 
+#img {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 #content {
   position: relative;
   top: 100px;
@@ -40,6 +46,10 @@ body {
   width: 65px;
   border: 2px solid plum;
   border-radius: 2px 6px 2px 6px;
+}
+
+#std .input {
+  width: 100px;
 }
 
 #navbar {
