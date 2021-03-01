@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta description="This site helps you to get the answers of all the questions inputed in within 0.01 seconds">
+ <meta name="author" content="Franklin Ominyi">
+ <title>MATRIX HOME</title>
+ <link rel="shortcut icon" href="img/solve your maths with.png" type="image/x-icon">
+ <link rel="apple-touch-icon" href="img/solve your maths with.png">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <noscript>
+  <h4>We are sorry your browser doesn't support Javascript</h4>
+  <h5>You have to enable Javascript to run this app</h5>
+ </noscript>
+ <div id="navbar">
+  <h4>Matrix Home</h4>
+  <div id="toggler">
+   <span id="togglerbar">&#9776</span>
+  </div>
+  <div id="togglemenu">
+   <a href="#" class="active">Home</a>
+   <a href="#">3 by 3 Matrix</a>
+   <a href="#determinant2">2 by 2 Matrix</a>
+   <a href="#quadratic">Quadratic Equation</a>
+   <a href="#simultaneous">Simultaneous Equation</a>
+   <!-- <a href="#">About</a> -->
+  </div>
+ 
+ </div>
+
+ 
+ <div id="content">
+  <p id="info">For Info and Suggestion Call 07015734237</p>
+  <div class="instructions">
+   <div>
+    <img src="img/solve your maths with.png" alt="image">
+   </div>
+   
+   <div>
+     <img src="img/instructions.png" alt="image">
+    </div>
+   
+   <div>
+    <img src="img/instructions 2.png" alt="image">
+   </div>
+   
+  </div>
+
+  <div class="container">
+   <div class="row">
+    <div id="determinant" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Determinant of 3 by 3 Matrix</h5>
+      <input type="number" placeholder="a11" class="input" id="a11">
+      <input type="number" placeholder="a12" class="input" id="a12">
+      <input type="number" placeholder="a13" class="input" id="a13"><br><br>
+      <input type="number" placeholder="a21" class="input" id="a21">
+      <input type="number" placeholder="a22" class="input" id="a22">
+      <input type="number" placeholder="a23" class="input" id="a23"><br><br>
+      <input type="number" placeholder="a31" class="input" id="a31">
+      <input type="number" placeholder="a32" class="input" id="a32">
+      <input type="number" placeholder="a33" class="input" id="a33"><br><br>
+      <span id="ans" class="ans"></span><br><br>
+      <span id="submitBtn" class="submit">Submit</span>
+      <span id="clearBtn" class="clear">Clear</span>
+     </div>
+    </div>
+ 
+    <div id="determinant2" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Determinant of 2 by 2 Matrix</h5>
+      <input type="number" placeholder="a11" class="input" id="ba11">
+      <input type="number" placeholder="a12" class="input" id="ba12"><br><br>
+  
+      <input type="number" placeholder="a21" class="input" id="ba21">
+      <input type="number" placeholder="a22" class="input" id="ba22"><br><br>
+  
+      <span id="ans2" class="ans"></span><br><br>
+      <span class="submit" id="submitBtn2">Submit</span>
+      <span id="clearBtn2" class="clear">Clear</span>
+     </div>
+    </div>
+
+    <div id="matrixEquation" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Using Matrix Method To Solve</h5>
+      <p style="text-align: center; color: rgb(245, 0, 0);">3 by 3 Matrix Equation</p><br>
+      <input type="number" placeholder="ax" class="input" id="a11E">
+      <input type="number" placeholder="ay" class="input" id="a12E">
+      <input type="number" placeholder="az" class="input" id="a13E"> =
+      <input type="number" placeholder="ak" class="input" id="ak"><br><br>
+
+      <input type="number" placeholder="bx" class="input" id="a21E">
+      <input type="number" placeholder="by" class="input" id="a22E">
+      <input type="number" placeholder="bz" class="input" id="a23E"> =
+      <input type="number" placeholder="bk" class="input" id="bk"><br><br>
+
+      <input type="number" placeholder="cx" class="input" id="a31E">
+      <input type="number" placeholder="cy" class="input" id="a32E">
+      <input type="number" placeholder="cz" class="input" id="a33E"> =
+      <input type="number" placeholder="ck" class="input" id="ck"><br><br>
+      <span id="ansE" class="ans"></span><br><br>
+      <span id="submitBtnE" class="submit">Submit</span>
+      <span id="clearBtnE" class="clear">Clear</span>
+     </div>
+    </div>
+
+    <div id="matrixEquation" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Using Matrix Method To Solve</h5>
+      <p style="text-align: center; color: rgb(245, 0, 0);">2 by 2 Matrix Equation</p><br>
+      <input type="number" placeholder="ax" class="input" id="a11E2">
+      <input type="number" placeholder="ay" class="input" id="a12E2"> =
+      <input type="number" placeholder="ak" class="input" id="ak2"><br><br>
+
+      <input type="number" placeholder="bx" class="input" id="a21E2">
+      <input type="number" placeholder="by" class="input" id="a22E2"> =
+      <input type="number" placeholder="bk" class="input" id="bk2"><br><br>
+     
+      <span id="ansE2" class="ans"></span><br><br>
+      <span id="submitBtnE2" class="submit">Submit</span>
+      <span id="clearBtnE2" class="clear">Clear</span>
+     </div>
+    </div>
+ 
+    <div class="col-md-4" id="quadratic">
+     <div>
+      <h5 style="text-align: center">Quadratic Equation</h5>
+      <input type="number" placeholder="a" class="input" id="a">
+      <input type="number" placeholder="b" class="input" id="b">
+      <input type="number" placeholder="c" class="input" id="c"><br><br>
+  
+      <span id="ans3" class="ans"></span><br><br>
+      <span class="submit" id="submitBtn3">Submit</span>
+      <span id="clearBtn3" class="clear">Clear</span>
+     </div>
+    </div>
+
+    <div class="col-md-4" id="">
+     <div>
+      <h5 style="text-align: center">Finding the Product and Sum of roots</h5>
+      <input type="number" placeholder="a" class="input" id="aR">
+      <input type="number" placeholder="b" class="input" id="bR">
+      <input type="number" placeholder="c" class="input" id="cR"><br><br>
+  
+      <span id="ans3R" class="ans"></span><br><br>
+      <span class="submit" id="submitBtn3R">Submit</span>
+      <span id="clearBtn3R" class="clear">Clear</span>
+     </div>
+    </div>
+
+    <!--Quadratic Root Formulation-->
+    <!--RF stands for root formulation-->
+    <div class="col-md-4" id="">
+     <div>
+      <h5 style="text-align: center">Formulation of Quadratic <br>
+       Equation from Roots</h5>
+      <input type="number" placeholder="a" class="input" id="aRF">
+      <input type="number" placeholder="b" class="input" id="bRF"><br><br>
+  
+      <span id="ans3RF" class="ans">x<sup>2</sup><span id="ans3RF2"></span></span><br><br>
+      <span class="submit" id="submitBtn3RF">Submit</span>
+      <span id="clearBtn3RF" class="clear">Clear</span>
+     </div>
+    </div>
+
+
+    <div id="simultaneous" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Simultaneous Equation</h5>
+      <input type="number" placeholder="Ax" class="input" id="simuAx">
+      <input type="number" placeholder="Ay" class="input" id="simuAy"> =  
+      <input type="number" placeholder="Ac" class="input" id="simuAc"><br><br>
+      <input type="number" placeholder="Bx" class="input" id="simuBx">
+      <input type="number" placeholder="By" class="input" id="simuBy"> =
+      <input type="number" placeholder="Bc" class="input" id="simuBc"><br><br>
+      <span id="ansSimu" class="ans"></span><br><br>
+      <span id="submitBtnSimu" class="submit">Submit</span>
+      <span id="clearBtnSimu" class="clear">Clear</span>
+     </div>
+    </div>
+
+    
+    <div id="" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Sequence and Series</h5>
+      <span>Finding 'd' when two equations are given</span><br>
+      <input type="number" placeholder="a Nth" class="input" id="TNa">
+      <input type="number" placeholder="Ca" class="input" id="TCa"><br><br>
+      <input type="number" placeholder="b Nth" class="input" id="TNb">
+      <input type="number" placeholder="Cb" class="input" id="TCb"><br><br>
+      
+      <span id="ansSS" class="ans"></span><br><br>
+      <span id="submitBtnSS" class="submit">Submit</span>
+      <span id="clearBtnSS" class="clear">Clear</span>
+     </div>
+    </div>
+
+    <div id="" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Sequence and Series</h5>
+      <span>Finding 'nth term' when 'a', 'n', and 'd' are given</span><br>
+      <input type="number" placeholder="a" class="input" id="Ta">
+      <input type="number" placeholder="n" class="input" id="Tn">
+      <input type="number" placeholder="d" class="input" id="Td"><br><br>
+      
+      <span id="ansSS3" class="ans"></span><br><br>
+      <span  id="submitBtnSS3" class="submit">Submit</span>
+      <span id="clearBtnSS3" class="clear">Clear</span>
+     </div>
+    </div>
+
+    <div id="" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Finding the First term of an AP</h5>
+      <span>Finding 'a' when 'nth term', 'd', 'Tn' are given</span><br>
+      <input type="number" placeholder="n" class="input" id="aN">
+      <input type="number" placeholder="d" class="input" id="aD">
+      <input type="number" placeholder="Tn" class="input" id="aTn"><br><br>
+      
+      <span id="ansSS4" class="ans"></span><br><br>
+      <span id="submitBtnSS4" class="submit">Submit</span>
+      <span id="clearBtnSS4" class="clear">Clear</span>
+     </div>
+    </div>
+
+    <div id="" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Sum of an AP</h5>
+      <span>Finding 'Sn' when 'a', 'nth term', 'd' are given</span><br>
+      <input type="number" placeholder="a" class="input" id="snA">
+      <input type="number" placeholder="n" class="input" id="snN">
+      <input type="number" placeholder="d" class="input" id="snD"><br><br>
+      
+      <span id="ansSS5" class="ans"></span><br><br>
+      <span id="submitBtnSS5" class="submit">Submit</span>
+      <span id="clearBtnSS5" class="clear">Clear</span>
+     </div>
+    </div>
+
+
+    <div id="" class="col-md-4">
+     <div>
+      <h5 style="text-align: center;">Geometric Progression</h5>
+      <span>Finding 'Tn' when 'a', 'r' and 'nth term' are given</span><br>
+      <input type="number" placeholder="a" class="input" id="Sa">
+      <input type="number" placeholder="r" class="input" id="Sr">
+      <input type="number" placeholder="Nth" class="input" id="Sn"><br><br>
+      
+      <span id="ansSS2" class="ans"></span><br><br>
+      <span id="submitBtnSS2" class="submit">Submit</span>
+      <span id="clearBtnSS2" class="clear">Clear</span>
+     </div>
+    </div>
+
+    <div class="col-md-12" style="margin-bottom: 70px; font-size: 30px">
+     <h3 style="text-align: center; color: blue;">Share</h3>
+     <h4 style="text-align: center;">
+      <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fappmatrixhome.netlify.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="whatsapp://send?text=https://appmatrixhome.netlify.com"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fappmatrixhome.netlify.com&hashtags=mathematics,mathematics-solver,online-mathematics-calculator&text=I have used this platform to solve many mathematics problems with just a click"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fappmatrixhome.netlify.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>      
+     </h4>    
+    </div>
+
+   </div>
+  </div>
+ 
+ </div>
+
+ 
+ <div class="footer">
+  <p>
+   Proudly Powered by <a href="https://frankofficial.netlify.com" target="_blank">Chitech-Group</a> <br>
+   &copy;2020 All Rights Reserved
+  </p>
+
+ </div>
+ <script src="js/script.js"></script>
+</body>
+</html>

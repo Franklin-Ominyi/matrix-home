@@ -1,0 +1,229 @@
+*{
+ padding: 0;
+ box-sizing: border-box;
+ margin:0;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+body{
+ background-color: rgb(35, 190, 157);
+}
+
+#navbar{
+ position: fixed;
+ width: 100%; 
+ background: white;
+ // margin: 0 20px;
+ z-index: 3;
+ h4{
+  float: left;
+  margin-left: 10px;
+  font-family: fantasy;
+  color: blue;
+  padding-top: 5px;
+ }
+ 
+}
+
+//Handburger menu
+#togglerbar{
+ font-size: 25px;
+ font-weight: bolder;
+ float: right;
+ padding-top:3px;
+ color:purple;
+ cursor: pointer;
+ margin-right: 7px;
+}
+
+
+#togglemenu{
+ display: none;
+ position: fixed;
+ width: 100%;
+ z-index: 2;
+ top: 33px;
+ background: #ff22ff;
+
+ a{
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 0;
+  padding: 2px 0;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 12px;
+  
+  &:hover{
+   background: white;
+   color: #ff22ff;
+  }
+ }
+
+ .active{
+  background: black;
+  color: blanchedalmond;
+  &:hover{
+   background:white;
+   color: black;
+  }
+ }
+}
+
+#info{
+ background-color: antiquewhite;
+ color: #ff22ff;
+ font-size: 18px;
+ font-family: cursive;
+ text-align: center;
+}
+
+#content{
+ position: relative;
+ top: 80px;
+}
+
+.instructions{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ margin-bottom: 25px;
+ div{
+  margin-bottom: 20px;  
+ }
+}
+
+img{
+ height: 395px;
+ width: 25vw;
+}
+
+
+.col-md-4 div{
+ border: 3px solid orange;
+ box-shadow: 6px 2px 3px 4px white;
+ border-radius: 10%;
+ margin-bottom: 20px;
+ // height: 400px;
+ background-color: rgb(166, 255, 1);
+ padding: 10px;
+
+ h5{
+  color: rgba(32, 136, 255, 0.972);
+  text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+}
+
+.col-md-4:last-child{
+ margin-bottom: 90px;
+}
+
+
+.input{
+ margin:2px;
+ font-size: 14px;
+ width: 65px;
+ border: 2px solid plum;
+ border-radius: 2px 6px 2px 6px;
+}
+
+
+.ans{
+ font-weight: bolder; 
+ color: rgb(9, 5, 255); 
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.clear,.submit{
+ font-family: cursive;
+ padding: 3px;
+ border: 2px solid orangered;
+ border-radius: 3px 6px 3px 6px;
+ background: black;
+ color: white;
+ transition: all 0.4s ease-out;
+ transition-delay: 0.01s;
+ cursor: pointer;
+ margin-bottom: 10px;
+
+ &:hover{
+  background-color: orangered;
+ }
+}
+
+//Icons
+i{
+ margin: 10px 10px;
+ color: blue;
+ &:hover{
+ color: green;
+ }
+ 
+}
+
+//footer section
+.footer{
+ position: fixed;
+ bottom: 0px;
+ width: 100%;
+ background: white;
+ font-size: 12px;
+
+ p{
+  text-align: center;
+  color: black;
+  margin: 0;
+  padding: 0;
+ }
+}
+
+
+#ans3RF{
+ display: none;
+}
+
+@media screen and(max-width: 850px){
+ 
+ .instructions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ img{
+  width: 80vw;
+ }
+
+ #togglemenu{
+  font-size: 12px;
+ }
+}
+
+@media screen and (max-width: 350px){
+ #togglemenu{
+  display: none;
+ };
+
+ #togglerbar{
+  display: none;
+ }
+
+ .instructions{
+  display: none;
+ }
+
+ #info{
+  font-size: 14px;
+ }
+
+
+}
+
+
+
