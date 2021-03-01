@@ -5,48 +5,54 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <meta description="This site helps you to get the answers of all the questions inputed in within 0.01 seconds">
+ <meta name="author" content="Franklin Ominyi">
  <title>MATRIX HOME</title>
- <link rel="apple-touch-icon" href="img/solve your maths with.png">
  <link rel="shortcut icon" href="img/solve your maths with.png" type="image/x-icon">
+ <link rel="apple-touch-icon" href="img/solve your maths with.png">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+ <noscript>
+  <h4>We are sorry your browser doesn't support Javascript</h4>
+  <h5>You have to enable Javascript to run this app</h5>
+ </noscript>
  <div id="navbar">
   <h4>Matrix Home</h4>
-
   <div id="toggler">
    <span id="togglerbar">&#9776</span>
   </div>
-  <div class="container-fluid" id="togglemenu">
+  <div id="togglemenu">
    <a href="#" class="active">Home</a>
    <a href="#">3 by 3 Matrix</a>
-   <a href="#std">Standard Deviation</a>
+   <a href="#determinant2">2 by 2 Matrix</a>
    <a href="#quadratic">Quadratic Equation</a>
    <a href="#simultaneous">Simultaneous Equation</a>
+   <!-- <a href="#">About</a> -->
   </div>
  
  </div>
 
  
  <div id="content">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-4">
-     <img id="img" src="img/solve your maths with.png" alt="logo">
-    </div>
-
-    <div class="col-md-4">
-     <img id="img" src="img/instructions.png" alt="logo">
-    </div>
-
-    <div class="col-md-4">
-     <img id="img" src="img/instructions 2.png" alt="logo">
-    </div>
-
+  <p id="info">For Info and Suggestion Call 07015734237</p>
+  <div class="instructions">
+   <div>
+    <img src="img/solve your maths with.png" alt="image">
    </div>
+   
+   <div>
+     <img src="img/instructions.png" alt="image">
+    </div>
+   
+   <div>
+    <img src="img/instructions 2.png" alt="image">
+   </div>
+   
+  </div>
+
+  <div class="container">
    <div class="row">
     <div id="determinant" class="col-md-4">
      <div>
@@ -61,8 +67,8 @@
       <input type="number" placeholder="a32" class="input" id="a32">
       <input type="number" placeholder="a33" class="input" id="a33"><br><br>
       <span id="ans" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtn" class="submit">
-      <button id="clearBtn" class="clear">Clear</button>
+      <span id="submitBtn" class="submit">Submit</span>
+      <span id="clearBtn" class="clear">Clear</span>
      </div>
     </div>
  
@@ -76,8 +82,8 @@
       <input type="number" placeholder="a22" class="input" id="ba22"><br><br>
   
       <span id="ans2" class="ans"></span><br><br>
-      <input type="button" value="Submit" class="submit" id="submitBtn2">
-      <button id="clearBtn2" class="clear">Clear</button>
+      <span class="submit" id="submitBtn2">Submit</span>
+      <span id="clearBtn2" class="clear">Clear</span>
      </div>
     </div>
 
@@ -100,8 +106,8 @@
       <input type="number" placeholder="cz" class="input" id="a33E"> =
       <input type="number" placeholder="ck" class="input" id="ck"><br><br>
       <span id="ansE" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnE" class="submit">
-      <button id="clearBtnE" class="clear">Clear</button>
+      <span id="submitBtnE" class="submit">Submit</span>
+      <span id="clearBtnE" class="clear">Clear</span>
      </div>
     </div>
 
@@ -116,10 +122,10 @@
       <input type="number" placeholder="bx" class="input" id="a21E2">
       <input type="number" placeholder="by" class="input" id="a22E2"> =
       <input type="number" placeholder="bk" class="input" id="bk2"><br><br>
-
+     
       <span id="ansE2" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnE2" class="submit">
-      <button id="clearBtnE2" class="clear">Clear</button>
+      <span id="submitBtnE2" class="submit">Submit</span>
+      <span id="clearBtnE2" class="clear">Clear</span>
      </div>
     </div>
  
@@ -131,8 +137,8 @@
       <input type="number" placeholder="c" class="input" id="c"><br><br>
   
       <span id="ans3" class="ans"></span><br><br>
-      <input type="button" value="Submit" class="submit" id="submitBtn3">
-      <button id="clearBtn3" class="clear">Clear</button>
+      <span class="submit" id="submitBtn3">Submit</span>
+      <span id="clearBtn3" class="clear">Clear</span>
      </div>
     </div>
 
@@ -144,8 +150,8 @@
       <input type="number" placeholder="c" class="input" id="cR"><br><br>
   
       <span id="ans3R" class="ans"></span><br><br>
-      <input type="button" value="Submit" class="submit" id="submitBtn3R">
-      <button id="clearBtn3R" class="clear">Clear</button>
+      <span class="submit" id="submitBtn3R">Submit</span>
+      <span id="clearBtn3R" class="clear">Clear</span>
      </div>
     </div>
 
@@ -159,8 +165,8 @@
       <input type="number" placeholder="b" class="input" id="bRF"><br><br>
   
       <span id="ans3RF" class="ans">x<sup>2</sup><span id="ans3RF2"></span></span><br><br>
-      <input type="button" value="Submit" class="submit" id="submitBtn3RF">
-      <button id="clearBtn3RF" class="clear">Clear</button>
+      <span class="submit" id="submitBtn3RF">Submit</span>
+      <span id="clearBtn3RF" class="clear">Clear</span>
      </div>
     </div>
 
@@ -175,8 +181,8 @@
       <input type="number" placeholder="By" class="input" id="simuBy"> =
       <input type="number" placeholder="Bc" class="input" id="simuBc"><br><br>
       <span id="ansSimu" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnSimu" class="submit">
-      <button id="clearBtnSimu" class="clear">Clear</button>
+      <span id="submitBtnSimu" class="submit">Submit</span>
+      <span id="clearBtnSimu" class="clear">Clear</span>
      </div>
     </div>
 
@@ -191,8 +197,8 @@
       <input type="number" placeholder="Cb" class="input" id="TCb"><br><br>
       
       <span id="ansSS" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnSS" class="submit">
-      <button id="clearBtnSS" class="clear">Clear</button>
+      <span id="submitBtnSS" class="submit">Submit</span>
+      <span id="clearBtnSS" class="clear">Clear</span>
      </div>
     </div>
 
@@ -205,8 +211,8 @@
       <input type="number" placeholder="d" class="input" id="Td"><br><br>
       
       <span id="ansSS3" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnSS3" class="submit">
-      <button id="clearBtnSS3" class="clear">Clear</button>
+      <span  id="submitBtnSS3" class="submit">Submit</span>
+      <span id="clearBtnSS3" class="clear">Clear</span>
      </div>
     </div>
 
@@ -219,8 +225,8 @@
       <input type="number" placeholder="Tn" class="input" id="aTn"><br><br>
       
       <span id="ansSS4" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnSS4" class="submit">
-      <button id="clearBtnSS4" class="clear">Clear</button>
+      <span id="submitBtnSS4" class="submit">Submit</span>
+      <span id="clearBtnSS4" class="clear">Clear</span>
      </div>
     </div>
 
@@ -233,12 +239,12 @@
       <input type="number" placeholder="d" class="input" id="snD"><br><br>
       
       <span id="ansSS5" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnSS5" class="submit">
-      <button id="clearBtnSS5" class="clear">Clear</button>
+      <span id="submitBtnSS5" class="submit">Submit</span>
+      <span id="clearBtnSS5" class="clear">Clear</span>
      </div>
     </div>
 
-    <!--Geometric Progression-->
+
     <div id="" class="col-md-4">
      <div>
       <h5 style="text-align: center;">Geometric Progression</h5>
@@ -248,25 +254,10 @@
       <input type="number" placeholder="Nth" class="input" id="Sn"><br><br>
       
       <span id="ansSS2" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnSS2" class="submit">
-      <button id="clearBtnSS2" class="clear">Clear</button>
+      <span id="submitBtnSS2" class="submit">Submit</span>
+      <span id="clearBtnSS2" class="clear">Clear</span>
      </div>
     </div>
-
-    <!--Standard deviation, mean and variance-->
-    <div id="std" class="col-md-4">
-     <div>
-      <h5 style="text-align: center;">Standard Deviation, Mean and Variance</h5>
-      <span>Separated each value by a comma (,)</span><br>
-      <input type="text" placeholder="Values" class="input" id="stdValues">
-      <input type="text" placeholder="Frequencies" class="input" id="stdFrequencies"><br><br>
-      
-      <span id="ansStd" class="ans"></span><br><br>
-      <input type="button" value="Submit" id="submitBtnStd" class="submit">
-      <button id="clearBtnStd" class="clear">Clear</button>
-     </div>
-    </div>
-
 
     <div class="col-md-12" style="margin-bottom: 70px; font-size: 30px">
      <h3 style="text-align: center; color: blue;">Share</h3>
@@ -286,7 +277,7 @@
  
  <div class="footer">
   <p>
-   <span style="color: rgb(255, 10, 43)">Proudly</span> Powered by <a href="https://frankofficial.netlify.com" target="_blank">Chitech-Group</a> <br>
+   Proudly Powered by <a href="https://frankofficial.netlify.com" target="_blank">Chitech-Group</a> <br>
    &copy;2020 All Rights Reserved
   </p>
 
